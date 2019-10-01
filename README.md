@@ -2,7 +2,7 @@
 
 Download the free modeling software https://freefem.org/ and run the .edp files to see the animated simulation.
 
-1.Modeling the diffusion of heat(temperature) when heat is input through the bottom of a cuboid full of a material. Based on the Poisson Equation.Boundary conditions are such that heat only enters from the bottom, and can exit from all other surfaces. Each Simulation frame lasts 0.05 seconds(Δ𝑡=0.05). Press Enter for simulation start.
+1. Modeling the diffusion of heat(temperature) when heat is input through the bottom of a cuboid full of a material. Based on the Diffusion Equation. Boundary conditions are such that heat only enters from the bottom, and can exit from all other surfaces. Each Simulation frame lasts 0.05 seconds(Δ𝑡=0.05). Press Enter for simulation start.
 
 ![alt text](https://raw.githubusercontent.com/parthnan/HeatDiffusion-and-Drag-Modeling/master/heatdiffusion.png)
 
