@@ -1,0 +1,41 @@
+load "msh3"
+
+int nn=10;
+int mm=0.5;
+mesh Th=square(nn,nn,[10*x,0.5*y]);
+
+int[int] labelleft =[0,50];
+int[int] labelright =[0,60];
+int[int] rmid=[1,10,2,20,3,30,4,40];
+
+real zmin=0,zmax=2;
+mesh3  th2=buildlayers(Th,nn,
+zbound=[zmin,zmax],
+labelmid=rmid,
+reffaceup = labelright ,
+reffacelow = labelleft);
+
+plot(th2,wait=1);
+
+
+
+
+
+fespace Vh2(th2,P13d);
+Vh2 f,fo,v;
+real dt=0.01;
+
+problem  Poisson3d(f,v,solver=LU)
+= int3d(th2)(f*v/dt+(dx(f)*dx(v)+dy(f)*dy(v)+dz(f)*dz(v))  )
+	-int3d(th2)(fo*v/dt )
+  	+ on(10,20,30,40,60,f=0)
+  	+ int2d(th2,50)(-1*v);
+  	
+  	
+for ( int n=0; n< 100 ; n=n+1) 
+{ 
+  	fo=f;
+  	Poisson3d; 
+	plot(f,value=1);
+};  
+
