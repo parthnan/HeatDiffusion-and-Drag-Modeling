@@ -4,9 +4,9 @@ Download the free modeling software https://freefem.org/ and run the .edp files 
 
 1. Modeling the diffusion of heat(temperature) when heat is input through the bottom of a cuboid full of a material. Based on the Diffusion Equation. Boundary conditions are such that heat only enters from the bottom, and can exit from all other surfaces. Each Simulation frame lasts 0.05 seconds(Δ𝑡=0.05). Press Enter for simulation start.
 
-![alt text](https://raw.githubusercontent.com/parthnan/HeatDiffusion-and-Drag-Modeling/master/heatdiffusion.png)
-
 Red is the Highest Temperature, Green the lowest.
+
+![alt text](https://raw.githubusercontent.com/parthnan/HeatDiffusion-and-Drag-Modeling/master/heatdiffusion.png)
 
 2. Modeling the airflow around a spherical aerofoil. Based on the Non stationary Navier-Stokes equation. Boundary conditions are such that airflow only enters from the left, and exits to the right. Each Simulation frame lasts 0.05 seconds(Δ𝑡=0.05).
 
@@ -24,7 +24,6 @@ Boundary conditions:
 
 𝑢_1=0, 𝑢_2=0 on Γ_sphere
 
+Velocity increases in the Wind vector field from color Red to color Violet.
+
 ![alt text](https://raw.githubusercontent.com/parthnan/HeatDiffusion-and-Drag-Modeling/master/winddiffusion.png)
-
-Velocity increases in the Wind vector field is from Red to Violet.
-
