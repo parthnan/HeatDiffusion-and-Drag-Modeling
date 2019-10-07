@@ -18,7 +18,7 @@ Boundary conditions:
 
 𝑢_1=0, 𝑢_2=0 on Γ_sphere
 
-Velocity increases in the Wind vector field from color Red to color Violet.
+Velocity increases in the Wind vector field from color Red(Lowest) to color Blue to color Purple/Pink(Highest).
 
 ![alt text](https://raw.githubusercontent.com/parthnan/HeatDiffusion-and-Drag-Modeling/master/winddiffusion.png)
 
