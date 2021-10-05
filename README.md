@@ -1,6 +1,6 @@
 # Heat Diffusion and Air Drag Modeling
 
-Download the free modeling software https://freefem.org/ and run the .edp files to see the animated simulation.
+Download the software at https://freefem.org/ and run the .edp files to see the animated simulation.
 
 1.  About "wind_around_sphere.edp" : Modeling the airflow around a spherical aerofoil. Based on the Non stationary Navier-Stokes equation. Boundary conditions are such that airflow only enters from the left, and exits to the right. Each Simulation frame lasts 0.05 seconds(Δ𝑡=0.05).
 
